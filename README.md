@@ -1,1 +1,0 @@
-# retranslate_typing
