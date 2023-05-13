@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="nkhr-c.com">
+    <meta name="twitter:site" content="@tt_cocoan">
+    <meta name="twitter:title" content="逆翻訳タイピング">
+    <meta name="twitter:description" content="qwe to JIS or JIS to qwe">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>逆翻訳タイピング</title>
+</head>
+
+<body>
+
+    <section class="hero d">
+        <div class="hero-body">
+            <div class="container">
+                <h1 id="title" class="title is-2 has-text-centered">
+                    逆翻訳タイピング
+                </h1>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container is-fluid tile is-ancestor">
+            <div class="tile is-parent container">
+                <div id="area" class="is-relative mx-auto">
+
+                    <!--打ったキー表示するとこ-->
+                    <div id="inputArea" class="is-child box is-full has-text-centered">
+
+                        <input id="input" class="input is-large" type="text" style="width:800px;font-size:2em;">
+
+                    </div>
+
+                    <!--スコアとか時間とかのとこ-->
+                    <div id="info" class="content is-child box column is-full has-text-centered">
+
+                        <progress id="progress" class="progress is-large is-success" max="300" value="300"></progress>
+
+                        <p class="mx-6">
+                            TIME:<span id="timer" style="font-size:2em" class="has-text-danger">30.0</span>秒
+                        </p>
+
+                        <p class="mx-6">
+                            <span id="count" style="font-size:2em" class="has-text-danger">0</span>打鍵<br>
+                        </p>
+
+                        <a class="button mx-6" target="_blank" id="tweet" 
+                        href="https://twitter.com/intent/tweet?ref_src=twsrc&hashtags=はっしゅたぐ&url=http://hogehoge.com">
+                        ツイート</a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer py-6">
+    </footer>
+
+<script src="./main.js" type="module"></script>
+
+
+</body>
+
+</html>
